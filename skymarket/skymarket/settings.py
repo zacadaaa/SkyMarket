@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "drf_spectacular",
+    "corsheaders",
 
     "users",
     "ads",
@@ -146,13 +147,11 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-
 SPECTACULAR_SETTINGS = {
     "TITLE": "This is SPARTA !!!",
     "DESCRIPTION": "This is SPARTA !!!",
     "VERSION": "6.6.6"
 }
-
 
 # Include Email Backend
 # TODO эти переменные мы добавили чтобы помочь Вам настроить почтовый ящик на django.
